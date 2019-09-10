@@ -266,7 +266,10 @@ public class KeychainModule extends ReactContextBaseJavaModule {
     }
 
     private boolean isFingerprintAuthAvailable() {
-        return DeviceAvailability.isFingerprintAuthAvailable(getReactApplicationContext());
+        // This requires android biometrics, which have not been set up yet.
+        // The old implementation relied on the deprecated FingerprintManager module.
+        // Rather than lie or restrict ourselves to API version 29, we just return false for android.
+        return false;
     }
 
     private boolean isSecureHardwareAvailable() {
