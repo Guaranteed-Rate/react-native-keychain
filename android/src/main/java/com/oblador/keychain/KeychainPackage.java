@@ -13,7 +13,6 @@ import java.util.List;
 public class KeychainPackage implements ReactPackage {
 
     public KeychainPackage() {
-
     }
 
     @Override

@@ -1,8 +1,8 @@
 package com.oblador.keychain;
 
 import android.os.Build;
-import android.support.annotation.NonNull;
 import android.util.Log;
+import androidx.annotation.NonNull;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Promise;
