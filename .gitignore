@@ -44,3 +44,15 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
+
+# VIM temp files
+*.swp
+
+# Intellij configuration
+.idea/
+*.iml
+
+# Android Studio configuration
+.gradle/
+local.properties
+
