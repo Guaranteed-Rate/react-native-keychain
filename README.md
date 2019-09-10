@@ -1,3 +1,19 @@
+**Note:** This is a Guaranteed Rate-specific port of the existing repository.  The current repository relies on a very outdated version of Gradle, doesn't have AndroidX support, and relies on the deprecated [`android.hardware.fingerprint.FingerprintManager` API](https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager).
+
+There are no API differences, however the `KeychainModule.isFingerprintAuthAvailable` API always returns false for android.
+
+You may use an alternative biometrics library, or a specific library targeting the FingerprintManager API.
+
+To use GR's version of the library, reference the project in your `package.json` via a git tag.  For example, the current version would be
+
+```json
+{
+  "dependencies": {
+    "react-native-keychain": "git://github.com/Guaranteed-Rate/react-native-keychain.git#androidx-20190910-3"
+  }
+}
+```
+
 <p align="center"><img src="https://user-images.githubusercontent.com/378279/36642269-6195b10c-1a3d-11e8-9e1b-37a3d1bcf7b3.png" align="center" width="150" height="201" alt="" /></p>
 
 <h1 align="center">react-native-keychain</h1>
